@@ -1,0 +1,22 @@
+{
+  "name": "jensen-webb-projekt",
+  "version": "1.0.0",
+  "description": "Utveckling av webbapplikationer SYTEST24",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tristanmvh/jensen-webb-projekt.git"
+  },
+  "author": "Tristan Vicente Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tristanmvh/jensen-webb-projekt/issues"
+  },
+  "homepage": "https://github.com/tristanmvh/jensen-webb-projekt#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

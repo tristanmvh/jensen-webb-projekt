@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-areas: 
+    "h h h h h"
+    "s m m m m"
+    "f f f f f";
+    grid-template-rows: 15% 65% 20%;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+.page-layout > * {
+    background-color: green;
+}
+
+header {
+    grid-area: h;
+}
+
+header img {
+    max-height: 100%;
+    padding: 10px;
+}
+
+main {
+    grid-area: m;
+}
+
+aside {
+    grid-area: s;
+}
+
+footer {
+    grid-area: f;
+}
+
+
