@@ -1,25 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
     <div class="page-layout">
         <header>
-
+            <div class="logo-container">
+                <a href="/home" class="generic-link"><img src="images/logo2.png" class="logo"></a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-item"><a href="/about" class="generic-link">Om oss</a></li>
+                    <li class="nav-item"><a href="/search" class="generic-link">Sök</a></li>
+                    <li class="nav-item cart">
+                        <a class="cart-button">Kundvagn</a>
+                        <div class="cart-content">
+                            <div class="cart-items"></div>
+                            <div class="cart-total-container">
+                                <div class="cart-total"></div>
+                                <button class="empty-cart-button" onclick="emptyCart()">
+                                    Rensa varukorg
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <aside>
-            
+
         </aside>
         <main>
-            
+            <div class="page" id="home">
+                <div class="container heading-container">
+                    <h2>Utvalda produkter</h2>
+                </div>
+                <div class="content">
+                    <div class="container products-grid" id="recommended-products"></div>
+                </div>
+            </div>
+
+            <div class="page" id="product">
+                <div class="container location">
+                    <span>
+                        <a href="/" class="generic-link">Hem</a> /
+                        <a class="product-location-category-name generic-link">kategori</a> /
+                        <span class="product-location-product-name">produkt</span></span>
+                </div>
+                <div class="content">
+                    <div class="product-image-container">
+                        <img class="product-image" width="500" height="500">
+                    </div>
+                    <div class="product-information">
+                        <div class="product-name-container">
+                            <h2 class="product-name"></h2>
+                            <span class="product-brand"></span>
+                        </div>
+                        <div class="product-buy-container">
+                            <span class="product-price"></span>
+                            <div class="product-input-container"></div>
+                        </div>
+
+                        <div class="product-description-container">
+                            <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores quo tempora nemo hic nesciunt nobis quod fugiat necessitatibus quis!
+                                Aspernatur
+                                perferendis cumque velit odit? Nesciunt illo asperiores distinctio culpa assumenda.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo tempora nemo
+                                hic
+                                nesciunt nobis quod fugiat necessitatibus quis! Aspernatur perferendis cumque velit
+                                odit? Nesciunt illo asperiores distinctio culpa assumenda!</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="page" id="about">
+
+                <div class="content">
+                    <div class="about-description">
+                        <div class="container heading-container">
+                            <h2>Om oss</h2>
+                        </div>
+                        <div class="container">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores quo tempora nemo hic nesciunt nobis quod fugiat necessitatibus quis!
+                                Aspernatur
+                                perferendis cumque velit odit? Nesciunt illo asperiores distinctio culpa assumenda.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo tempora nemo
+                                hic
+                                nesciunt nobis quod fugiat necessitatibus quis! Aspernatur perferendis cumque velit
+                                odit? Nesciunt illo asperiores distinctio culpa assumenda!
+                            </p>
+                        </div>
+                        <div class="container">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores quo tempora nemo hic nesciunt nobis quod fugiat necessitatibus quis!
+                                Aspernatur
+                                perferendis cumque velit odit? Nesciunt illo asperiores distinctio culpa assumenda.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo tempora nemo
+                                hic
+                                nesciunt nobis quod fugiat necessitatibus quis! Aspernatur perferendis cumque velit
+                                odit? Nesciunt illo asperiores distinctio culpa assumenda!
+                            </p>
+                        </div>
+
+                        <div class="container">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Maiores quo tempora nemo hic nesciunt nobis quod fugiat necessitatibus quis!
+                                Aspernatur
+                                perferendis cumque velit odit? Nesciunt illo asperiores distinctio culpa assumenda.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo tempora nemo
+                                hic
+                                nesciunt nobis quod fugiat necessitatibus quis! Aspernatur perferendis cumque velit
+                                odit? Nesciunt illo asperiores distinctio culpa assumenda!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/snobben2.png" alt="snobben">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="category">
+                <div class="container heading-container">
+                    <h2 class="category-category-name">kategorinamn</h2>
+                </div>
+                <div class="content">
+                    <div class="container products-grid" id="category-products"></div>
+                </div>
+            </div>
+
+            <div class="page" id="search">
+                <div class="container">
+                    <div class="search-field-container">
+                        <input type="text" class="search-field" placeholder="Sök...">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container products-grid" id="search-result"></div>
+                </div>
+            </div>
+
+            <div class="page" id="not-found">
+                <div class="content">
+                    <p>Sidan du försöker läsa in existerar inte. Vänligen kontrollera stavning.</p>
+                </div>
+            </div>
         </main>
         <footer>
-            
+            <div class="footer-content">
+                <p>&copy <span id="footer-year"></span> Sensimilia. Kopiering förbjuden. <br>Skapad av Tristan Vicente
+                    Hernandez</p>
+            </div>
         </footer>
     </div>
+    <!-- javascript -->
+    </script>
+    <script src="js/main.js" type="module"></script>
+    <script src="js/cart.js"></script>
 </body>
+
 </html>

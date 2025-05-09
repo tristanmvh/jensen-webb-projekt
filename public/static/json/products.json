@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1001,
+        "category": "Jackor",
+        "name": "North Face 1996",
+        "brand": "The North Face",
+        "price": 3999,
+        "image": "northface1996.png"
+    },
+    {
+        "id": 1002,
+        "category": "Jackor",
+        "name": "Nike jacka",
+        "brand": "Nike",
+        "price": 899,
+        "image": "nike-jacka1.png"
+    },
+    {
+        "id": 1003,
+        "category": "T-shirts",
+        "name": "MFF Matchtröja 2024",
+        "brand": "Malmö FF",
+        "price": 1000,
+        "image": "mff2024.png"
+    },
+    {
+        "id": 1004,
+        "category": "Skor",
+        "name": "Asics GEL-1130",
+        "brand": "Asics",
+        "price": 1000,
+        "image": "asics.webp"
+    },
+    {
+        "id": 1005,
+        "category": "Skor",
+        "name": "Nike Air Force 1 '07",
+        "brand": "Nike",
+        "price": 1346,
+        "image": "af1.png"
+    },
+    {
+        "id": 1006,
+        "category": "T-shirts",
+        "name": "Supreme T-shirt",
+        "brand": "Supreme",
+        "price": 5999,
+        "image": "supreme1.jpg"
+    }
+]
